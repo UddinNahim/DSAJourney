@@ -5,7 +5,7 @@ def max_average(nums,k):
     for i in range(k,len(nums)):
         current_sum += nums[i] - nums[i-k]
         maxSum = max(maxSum, current_sum)
-    return maxSum /k
+    return float(maxSum) /k
 
 
 
